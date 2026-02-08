@@ -4,38 +4,67 @@
     <meta charset="utf-8" />
     <title>Nalyse's Incredible Content Posting System</title>
   </head>
-<body>
-  <main style="max-width: 800px; margin: 60px auto; font-family: Arial, sans-serif; line-height: 1.6;">
-    
-    <h1>Schedule and Publish TikTok Videos</h1>
 
-    <p>
-      <strong>Nalyse</strong> is a web-based tool that helps users schedule and publish videos
-      to a TikTok account they own using TikTok’s official Content Posting API.
-    </p>
+  <body>
+    <main style="max-width: 800px; margin: 60px auto; font-family: Arial, sans-serif; line-height: 1.6;">
 
-    <h2>How it works</h2>
-    <ul>
-      <li>Connect your TikTok account securely using TikTok Login Kit</li>
-      <li>Choose a video, caption, and scheduled publish time</li>
-      <li>Publish automatically using TikTok’s Content Posting API</li>
-    </ul>
+      <h1>Schedule and Publish TikTok Videos</h1>
 
-    <h2>Compliance</h2>
-    <p>
-      Nalyse only publishes content explicitly authorized by the user.
-      It does not scrape data, automate engagement, or interact with accounts
-      the user does not own.
-    </p>
+      <p>
+        <strong>Nalyse</strong> is a web-based tool that helps users schedule and publish videos
+        to a TikTok account they own using TikTok’s official Content Posting API.
+      </p>
 
-    <hr />
+      <!-- STEP 1: LOGIN ENTRY POINT -->
+      <p>
+        <a
+          href="https://YOUR-BACKEND-DOMAIN.com/auth/tiktok"
+          style="
+            display: inline-block;
+            padding: 14px 22px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+          "
+        >
+          Connect TikTok Account
+        </a>
+      </p>
 
-    <footer>
-      <a href="/privacy.html">Privacy Policy</a> ·
-      <a href="/tos.html">Terms of Service</a>
-    </footer>
+      <p style="font-size: 0.95em; color: #555;">
+        You will be redirected to TikTok to authorize posting access, then returned to a confirmation page.
+      </p>
 
-  </main>
-</body>
+      <h2>Reviewer Instructions</h2>
+      <ol>
+        <li>Click <strong>Connect TikTok Account</strong></li>
+        <li>Sign in to TikTok and approve permissions</li>
+        <li>You will be redirected to a confirmation page indicating the account is connected</li>
+      </ol>
 
+      <h2>How it works</h2>
+      <ul>
+        <li>Connect your TikTok account securely using TikTok OAuth (Login Kit)</li>
+        <li>Choose a video, caption, and scheduled publish time</li>
+        <li>Publish automatically using TikTok’s Content Posting API</li>
+      </ul>
+
+      <h2>Compliance</h2>
+      <p>
+        Nalyse only publishes content explicitly authorized by the user.
+        It does not scrape data, automate engagement, or interact with accounts
+        the user does not own.
+      </p>
+
+      <hr />
+
+      <footer>
+        <a href="/privacy.html">Privacy Policy</a> ·
+        <a href="/tos.html">Terms of Service</a>
+      </footer>
+
+    </main>
+  </body>
 </html>
